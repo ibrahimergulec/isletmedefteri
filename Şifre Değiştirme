@@ -1,0 +1,3 @@
+Chrome F12 basıp konsola allow pasting yazıp Enter’a basın, sonra komutu yapıştırın.
+Yapıştırmak yerine komutu elle yazın. Bu yolda allow pasting gerekmez:
+js = localStorage.removeItem('isletmedefteri.auth')
