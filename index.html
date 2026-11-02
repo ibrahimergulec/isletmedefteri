@@ -190,7 +190,7 @@ function imp(f){if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=
 /* auth */
 const AK='isletmedefteri.auth',hs=s=>{s='idf:'+s;let a=0xdeadbeef,b=0x41c6ce57;for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);a=Math.imul(a^c,2654435761);b=Math.imul(b^c,1597334677)}a=Math.imul(a^(a>>>16),2246822507)^Math.imul(b^(b>>>13),3266489909);b=Math.imul(b^(b>>>16),2246822507)^Math.imul(a^(a>>>13),3266489909);return(4294967296*(2097151&b)+(a>>>0)).toString(36)};
 let A;try{A=JSON.parse(localStorage[AK])}catch(e){}
-if(!A||!A.id)A={id:'Mürsel',h:hs('1234')};
+if(!A||!A.id)A={id:'Admin',h:hs('0000')};
 const saveA=()=>{try{localStorage[AK]=JSON.stringify(A)}catch(e){}},tl=s=>s.trim().toLocaleLowerCase('tr'),authed=()=>sessionStorage.getItem('ida')=='1';
 let tries=0,lock=0;
 function showLogin(){$('#sb').innerHTML='';$('#app').innerHTML='';$('#login').style.display='flex';$('#lu').value='';$('#lp').value='';$('#lerr').textContent='';$('#lu').focus()}
