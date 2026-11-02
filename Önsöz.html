@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>İŞLETME DEFTERİ – Tanıtım</title>
+<style>
+:root{--nv:#1b2540;--bg:#f3f4f7;--tx:#1e2430;--mu:#6b7385;--rd:#c23b32;--gn:#1d8a5a}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{font:18px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif;background:var(--bg);color:var(--tx);overflow:hidden}
+section{position:absolute;inset:0 0 64px;display:none;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:28px 6vw}
+section.on{display:flex}
+section.dk{background:var(--nv);color:#fff}
+h1{font-size:clamp(34px,7vw,64px);margin:0 0 10px;letter-spacing:.5px}
+h2{font-size:clamp(26px,4.5vw,40px);margin:0 0 22px}
+p{max-width:640px;margin:0 auto 10px}.mu{color:var(--mu)}.dk .mu{color:#aab3cc}
+.g{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));width:min(900px,100%)}
+.c{background:#fff;border:1px solid #e3e6ec;border-radius:14px;padding:18px}.c b{display:block;margin-bottom:4px}.c span{color:var(--mu);font-size:15px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;align-items:center;margin-bottom:22px}
+.flow i{font-style:normal;background:#fff;border:1px solid #e3e6ec;border-radius:99px;padding:9px 16px}
+.flow u{text-decoration:none;color:var(--mu)}
+.ex{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.ex div{border-radius:14px;padding:14px 22px;color:#fff;min-width:150px}.ex small{display:block;opacity:.85;font-size:13px}.ex b{font-size:24px}
+.r{background:var(--rd)}.n{background:var(--gn)}.d{background:var(--nv)}
+ul{list-style:none;padding:0;margin:0;text-align:left;max-width:560px}li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid #e3e6ec}
+li::before{content:"";position:absolute;left:4px;top:17px;width:10px;height:10px;border-radius:50%;background:var(--gn)}
+nav{position:fixed;left:0;right:0;bottom:0;height:64px;display:flex;align-items:center;justify-content:center;gap:14px;background:#fff;border-top:1px solid #e3e6ec}
+nav button{font:inherit;border:1px solid #cfd4de;background:#fff;border-radius:10px;padding:8px 16px;cursor:pointer}
+nav button:hover{background:#f0f2f6}nav button:focus-visible{outline:2px solid #2f5bd2;outline-offset:2px}
+#dots{display:flex;gap:8px}#dots b{width:9px;height:9px;border-radius:50%;background:#cfd4de}#dots b.on{background:var(--nv)}
+@media(prefers-reduced-motion:no-preference){section.on{animation:f .35s ease}@keyframes f{from{opacity:0}to{opacity:1}}}
+</style></head><body>
+
+<section class="dk"><h1>İŞLETME DEFTERİ</h1><p style="font-size:22px">Personel cari ve veresiye takip programı</p><p class="mu">Tek dosya. Kurulum yok. Veriler sizin cihazınızda.</p></section>
+
+<section><h2>Önsöz</h2><p>Bir çay, bir tost, iki su… Küçük hesaplar defterlere dağılır, ay sonunda kim ne almış, ne ödemiş bulmak zorlaşır.</p><p>İşletme Defteri bu hesapları kişi bazında tutar, borcu kendisi hesaplar, ödemeyi borçtan düşer. Telefonda da bilgisayarda da açılır.</p></section>
+
+<section><h2>Neler yapar?</h2><div class="g">
+<div class="c"><b>Kişiler ve ürünler</b><span>Personeli ve fiyat listesini kaydedin, pasife alın, fiyatı güncelleyin.</span></div>
+<div class="c"><b>Çoklu ürün satışı</b><span>Bir işleme istediğiniz kadar ürün ekleyin, toplam kendiliğinden hesaplanır.</span></div>
+<div class="c"><b>Borç ve ödeme</b><span>Herkesin güncel borcu tek listede. Ödeme girilince bakiye düşer.</span></div>
+<div class="c"><b>Geçmiş ve raporlar</b><span>Her işlem kayıtlı. Dönem raporu ve CSV indirme hazır.</span></div></div></section>
+
+<section><h2>Bir işlem nasıl ilerler?</h2>
+<div class="flow"><i>Kişi seç</i><u>→</u><i>Ürünleri ekle</i><u>→</u><i>Kaydet</i><u>→</u><i>Borç güncellenir</i><u>→</u><i>Ödeme düşülür</i></div>
+<div class="ex"><div class="r"><small>Alışveriş</small><b>130,00 ₺</b></div><div class="n"><small>Ödeme</small><b>− 50,00 ₺</b></div><div class="d"><small>Kalan borç</small><b>80,00 ₺</b></div></div></section>
+
+<section><h2>Kayıtlar güvende kalır</h2><ul>
+<li>Hiçbir işlem silinmez, yanlış kayıt iptal edilir ve ters kayıt oluşur.</li>
+<li>Fiyat değişse de eski işlemlerin tutarı aynı kalır.</li>
+<li>Borçtan fazla ödeme girilemez.</li>
+<li>Borcu olan kişi silinmez, pasife alınır.</li></ul></section>
+
+<section class="dk"><h2>Verileriniz nerede?</h2><p>Kayıtlar, programı açtığınız cihazın tarayıcısında saklanır. Başka bir yere gönderilmez.</p><p>Cihaz değiştirirken Ayarlar’dan yedek alıp yeni cihaza yüklersiniz.</p><p class="mu">İlk iş: Ayarlar’dan giriş şifresini değiştirin.</p></section>
+
+<nav><button id="pv" aria-label="Önceki">← Geri</button><div id="dots"></div><button id="nx" aria-label="Sonraki">İleri →</button></nav>
+<script>
+const S=[...document.querySelectorAll('section')],D=document.getElementById('dots');let i=0;
+S.forEach(()=>D.appendChild(document.createElement('b')));
+function show(n){i=Math.max(0,Math.min(S.length-1,n));S.forEach((s,k)=>s.classList.toggle('on',k==i));[...D.children].forEach((d,k)=>d.classList.toggle('on',k==i));pv.disabled=i==0;nx.disabled=i==S.length-1;location.hash=i+1}
+pv.onclick=()=>show(i-1);nx.onclick=()=>show(i+1);
+addEventListener('keydown',e=>{if(e.key=='ArrowRight'||e.key==' ')show(i+1);if(e.key=='ArrowLeft')show(i-1)});
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX);addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)show(i+(d<0?1:-1));x0=null});
+show((parseInt(location.hash.slice(1))||1)-1);
+</script></body></html>
